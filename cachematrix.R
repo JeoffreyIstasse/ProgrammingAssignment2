@@ -1,9 +1,10 @@
 ## The functions makeCacheMatrix and
-## functions do
+## functions cacheConsole allow to cahce the inverse of a matrice in one matrice
+## in order to avoid re-calculation of the inverse.
 
 
 ## The function makeCacheMatrix is a function which takes 
-## a matrix as arguments and retrieve a list containing functions
+## a matrix as argument and retrieve a list containing functions
 ## to set and get the value of that matrix and get and set the
 ## value of the inverse of that matrice. The special matrice obtained
 ## has the capacity to cache the value of its inverse. 
@@ -24,10 +25,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## The function cacheSolve takes a matrice and "..." as arguments. 
-## It first check if the inverse of the matrice is "cached" in x$getinv. 
+## It first checks if the inverse of the matrice is "cached". 
 ## If the inverse has already been calculated and cached, it retrieves the cached inverse
 ## Otherwise, it calculates the inverse of the matrix and caches its value.
-##It returns the inverse of the matrice sent in the arguments.
+## It returns the inverse of the matrice sent in the arguments.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
